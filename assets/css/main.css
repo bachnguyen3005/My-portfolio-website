@@ -2209,10 +2209,81 @@ input, select, textarea {
 			.image.main img {
 				width: 100%;
 			}
-
+			/* .image.personal {
+				
+				display: flex;
+				margin-left: 300px;
+				margin-right: 300px;
+				width: 50%;
+				align-items:center;
+				justify-content:center;
+			}
+	
+				.image.personal img {
+					border-radius: 10px;
+					width: 40%;
+					
+				} */
+				.image.personal figure {
+					position: relative;
+				}
+				.image.personal figure::before {
+					position: absolute;
+					top: 0;
+					left: -75%;
+					z-index: 2;
+					display: block;
+					content: '';
+					width: 70%;
+					height: 100%;
+					background: -webkit-linear-gradient(left, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+					background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,.3) 100%);
+					-webkit-transform: skewX(-25deg);
+					transform: skewX(-25deg);
+				}
+				.image.personal figure:hover::before {
+					-webkit-animation: shine .75s;
+					animation: shine .75s;
+				}
+				@-webkit-keyframes shine {
+					100% {
+						left: 125%;
+					}
+				}
+				@keyframes shine {
+					100% {
+						left: 125%;
+					}
+				}
+				.figure {
+					position: relative;
+					margin-left: 6cm;
+					width: 800px; /* can be omitted for a regular non-lazy image */
+					max-width: 100%;
+				  }
+				  .figure img.Sirv.image-hover {
+					position: absolute;
+					top: 0;
+					right: 0;
+					left: 0;
+					bottom: 0;
+					object-fit: contain;
+					opacity: 0;
+					transition: opacity .3s;
+				  }
+				  .figure:hover img.Sirv.image-hover {
+					opacity: 1;
+				  }
 			@media screen and (max-width: 736px) {
 
 				.image.main {
+					margin: 1.5em 0;
+				}
+
+			}
+			@media screen and (max-width: 1024px) {
+
+				image.personal {
 					margin: 1.5em 0;
 				}
 
