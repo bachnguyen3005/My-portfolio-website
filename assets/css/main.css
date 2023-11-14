@@ -2272,7 +2272,7 @@ input, select, textarea {
 					transition: opacity .3s;
 				  }
 				  .figure:hover img.Sirv.image-hover {
-					opacity: 1;
+					opacity: 0.95;
 				  }
 			@media screen and (max-width: 736px) {
 
