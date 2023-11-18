@@ -3505,6 +3505,54 @@ input, select, textarea {
 		top: -3.25em;
 	}
 
+
+		#banner:after {
+			-moz-transition: opacity 1.5s ease;
+			-webkit-transition: opacity 1.5s ease;
+			-ms-transition: opacity 1.5s ease;
+			transition: opacity 1.5s ease;
+			-moz-transition-delay: 0.35s;
+			-webkit-transition-delay: 0.35s;
+			-ms-transition-delay: 0.35s;
+			transition-delay: 0.35s;
+			pointer-events: none;
+			background-color: #1e2237;
+			content: '';
+			display: block;
+			height: 100%;
+			left: 0;
+			opacity: 0.5;
+			position: absolute;
+			top: 0;
+			width: 100%;
+			z-index: 1;
+		}
+	#banner {
+		-moz-align-items: center;
+		-webkit-align-items: center;
+		-ms-align-items: center;
+		align-items: center;
+		background-image: url("../../images/banner2.png") !important;
+		display: -moz-flex;
+		display: -webkit-flex;
+		display: -ms-flex;
+		display: flex;
+		padding: 6em 0 2em 0 ;
+		background-attachment: fixed;
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: cover;
+		border-bottom: 0 !important;
+		cursor: default;
+		height: 60vh;
+		margin-bottom: -3.25em;
+		max-height: 32em;
+		min-height: 22em;
+		position: relative;
+		top: -3.25em;
+	}
+
+
 		#banner:after {
 			-moz-transition: opacity 1.5s ease;
 			-webkit-transition: opacity 1.5s ease;
@@ -3526,7 +3574,6 @@ input, select, textarea {
 			width: 100%;
 			z-index: 1;
 		}
-
 		#banner h1 {
 			font-size: 3.25em;
 		}
@@ -3538,8 +3585,7 @@ input, select, textarea {
 			transition: opacity 1.5s ease, transform 0.5s ease-out, filter 0.5s ease, -webkit-filter 0.5s ease;
 			padding: 0 !important;
 			position: relative;
-			z-index: 2;
-			
+			z-index: 2;		
 		}
 
 			#banner > .inner .image {
@@ -3603,7 +3649,9 @@ input, select, textarea {
 		}
 
 		#banner.style2:after {
+			/* background-image: url("../../images/ThumbnailProject1.jpg") !important; */
 			background-color: #8d82c4;
+			
 		}
 
 		#banner.style3:after {
@@ -3635,7 +3683,7 @@ input, select, textarea {
 			-webkit-transform: translateX(-0.5em);
 			-ms-transform: translateX(-0.5em);
 			transform: translateX(-0.5em);
-			opacity: 0;
+			opacity: 0.3;
 		}
 
 		@media screen and (max-width: 1280px) {
