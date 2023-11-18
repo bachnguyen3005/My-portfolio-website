@@ -2202,12 +2202,14 @@ input, select, textarea {
 
 		.image.main {
 			display: block;
+
 			margin: 2.5em 0;
-			width: 100%;
+			width:70%;
 		}
 
 			.image.main img {
-				width: 100%;
+				margin-left: 8cm;
+				width: 70%;
 			}
 			/* .image.personal {
 				
@@ -2824,10 +2826,12 @@ input, select, textarea {
 			overflow: hidden;
 			position: relative;
 			width: 40%;
+			
 		}
 
 			.tiles article .image {
 				display: none;
+				
 			}
 
 			.tiles article header {
@@ -2864,7 +2868,7 @@ input, select, textarea {
 				height: 100%;
 				left: 0;
 				/* The transparency */
-				opacity: 10;    
+				opacity: 1;    
 				position: absolute;
 				width: 100%;
 				z-index: 2;
@@ -2880,10 +2884,11 @@ input, select, textarea {
 				top: 0;
 				width: 100%;
 				z-index: 1;
+				
 			}
 
 			.tiles article:hover:before {
-				opacity: 0;
+				opacity: 0.2;
 			}
 
 			.tiles article.is-transitioning {
@@ -2895,19 +2900,40 @@ input, select, textarea {
 				-webkit-filter: blur(0.5em);
 				-ms-filter: blur(0.5em);
 				filter: blur(0.5em);
-				opacity: 0.5;
+				opacity: 0.2;
 			}
 
 			.tiles article:nth-child(4n - 1), .tiles article:nth-child(4n - 2) {
 				width: 60%;
 			}
-
+			/* Thumbnail image for project 1 */
 			.tiles article:nth-child(6n - 5):before {
-				background-color: rgba(255, 255, 255, 0.663)
+				/* background-color: rgba(191, 63, 63, 0.663) */
+				/* background: #242943; */
+				background-color: #242943;
+				background-image: url("../../images/SolidWorksModelProject1-removebg-preview.png");
+				/* -webkit-filter: blur(0.1em); */
+				filter: blur(8px); */
+				background-size: 100%;
+				height: 100%;
+				width: 100%;
+				background-position: center;
+				-webkit-transition: .5s ease-in-out;
+				transition: .5s ease-in-out;				
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #8d82c4;
+				background-color: #5a7ee1;
+				/* background-image: url("../../images/SolidWorksModelProject1-removebg-preview.png");
+				-webkit-filter: blur(0.1em);
+				filter: blur(0.1em);
+				background-size: 100%;
+				height: 100%;
+				width: 100%;
+				background-position: center;
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out; */
+
 			}
 
 			.tiles article:nth-child(6n - 3):before {
@@ -3011,6 +3037,7 @@ input, select, textarea {
 			-ms-flex-direction: row;
 			flex-direction: row;
 			background-color: #2e3450;
+			
 		}
 
 			.spotlights > section > .image {
@@ -3020,6 +3047,7 @@ input, select, textarea {
 				display: block;
 				position: relative;
 				width: 30%;
+				
 			}
 
 				.spotlights > section > .image img {
@@ -3038,6 +3066,9 @@ input, select, textarea {
 					position: absolute;
 					top: 0;
 					width: 100%;
+					-moz-align-items: center;
+					
+
 				}
 
 			.spotlights > section > .content {
@@ -3073,6 +3104,7 @@ input, select, textarea {
 				-ms-flex-direction: row-reverse;
 				flex-direction: row-reverse;
 				background-color: #333856;
+				
 			}
 
 				.spotlights > section:nth-child(2n) > .content {
@@ -3186,6 +3218,7 @@ input, select, textarea {
 		display: -webkit-flex;
 		display: -ms-flex;
 		display: flex;
+		
 		background-color: #2a2f4a;
 		box-shadow: 0 0 0.25em 0 rgba(0, 0, 0, 0.15);
 		cursor: default;
@@ -3452,7 +3485,7 @@ input, select, textarea {
 		-webkit-align-items: center;
 		-ms-align-items: center;
 		align-items: center;
-		background-image: url("../../images/banner.jpg");
+		background-image: url("../../images/banner2.png");
 		display: -moz-flex;
 		display: -webkit-flex;
 		display: -ms-flex;
@@ -3473,21 +3506,21 @@ input, select, textarea {
 	}
 
 		#banner:after {
-			-moz-transition: opacity 2.5s ease;
-			-webkit-transition: opacity 2.5s ease;
-			-ms-transition: opacity 2.5s ease;
-			transition: opacity 2.5s ease;
-			-moz-transition-delay: 0.75s;
-			-webkit-transition-delay: 0.75s;
-			-ms-transition-delay: 0.75s;
-			transition-delay: 0.75s;
+			-moz-transition: opacity 1.5s ease;
+			-webkit-transition: opacity 1.5s ease;
+			-ms-transition: opacity 1.5s ease;
+			transition: opacity 1.5s ease;
+			-moz-transition-delay: 0.35s;
+			-webkit-transition-delay: 0.35s;
+			-ms-transition-delay: 0.35s;
+			transition-delay: 0.35s;
 			pointer-events: none;
-			background-color: #242943;
+			background-color: #1e2237;
 			content: '';
 			display: block;
 			height: 100%;
 			left: 0;
-			opacity: 0.85;
+			opacity: 0.75;
 			position: absolute;
 			top: 0;
 			width: 100%;
@@ -3506,10 +3539,12 @@ input, select, textarea {
 			padding: 0 !important;
 			position: relative;
 			z-index: 2;
+			
 		}
 
 			#banner > .inner .image {
 				display: none;
+				
 			}
 
 			#banner > .inner header {
@@ -3563,6 +3598,7 @@ input, select, textarea {
 			}
 
 		#banner.style1:after {
+			
 			background-color: #6fc3df;
 		}
 

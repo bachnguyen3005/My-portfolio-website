@@ -26,7 +26,7 @@
 					<nav id="menu">
 						<ul class="links">
 							<li><a href="index.html">Home</a></li>
-							<li><a href="landing.html">DIY 3D PRINTER</a></li>
+							<li><a href="landing.html">PROJECT 1: DIY 3D PRINTER</a></li>
 							<li><a href="landing.html">PROJECT 2</a></li>
 							<li><a href="landing.html">PROJECT 3</a></li>
 							<li><a href="landing.html">PROJECT 4</a></li>
@@ -48,6 +48,7 @@
 							<span class="image">
 								<img src="images/ThumbnailProject1.jpg" alt="" />
 							</span>
+							
 							<header class="major">
 								<h1>DIY BED SLINGER 3D PRINTER</h1>
 							</header>
@@ -65,7 +66,7 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Why a new 3d printer...</h2>
+										<h2>Objective: Why a new 3d printer?</h2>
 									</header>
 									<p> Initially, the 3D printer available in Vietnam within the $200 price range in 2021 lacked dual lead screws for the Z-axis. This resulted in a critical issue where the X gantry without the lead screw would tilt downward. Consequently, the X gantry no longer maintained parallel alignment with the bed surface. <br>
 										Furthermore, during that timeframe, 3D printers were suboptimal for running a 3D printing farm due to challenges in finding replacement parts. However, having a 3D printer constructed with open-build components makes it much easier to replace parts in the event of malfunctions.<br>
@@ -85,11 +86,13 @@
 										<div class="inner">
 											<header class="major">
 												<h3>Step 1: SolidWorks modeling</h3>
-											</header>
-											<p>Description for feature 1</p>
-											<!-- <ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul> -->
+												</header>
+												<li>In this stage, I have applied reverse engineering to take the dimension of 
+												my current 3D printer which was Ender 3 V2. 
+												I have adjusted the dimension to fit with the size of the heated bed that I bought on Aliexpress. 
+												I also add two support beams at the back of to make the 2 Z axis beams  more rigid.
+												The cover box for the electronics and the power supply are also mounted outside for easier to maintain (Design for manintainance).
+												</li>
 										</div>
 									</div>
 								</section>
@@ -103,7 +106,9 @@
 											<header class="major">
 												<h3>Step 2: Start building the frame</h3>
 											</header>
-											<p>It looks quite messy... I know</p>
+											<li>The 2020 and 2040 aluminum profile extrusion are used to make the frame</li>
+											<li>Metric hex bolts are used with fastened with tap holes inside the aluminum extrusion.</li>
+											<li>I used the torpedo level to make sure all of gantries are parallel and perpendicular together.</li>
 										</div>
 									</div>
 								</section>
@@ -117,9 +122,15 @@
 											<header class="major">
 												<h3>Step 3: Wiring</h3>
 											</header>
-											<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis magna sed nunc rhoncus condimentum sem. In efficitur ligula tate urna. Maecenas massa sed magna lacinia magna pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis tempus.</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
+											<h4> In this step, I need to wire these components: </h4>
+											<ul>
+											<li> 1 stepper motor for X gantry</li>
+											<li> 1 stepper motor for Y gantry </li>
+											<li> 2 stepper motor for Z axis </li>
+											<li> 1 thermomistor, 1 heater, 1 layer fan, 1 heatsink fan </li>
+											<li> 3 mechanical endstops </li>
+											<li> 1 LCD screen </li>
+											<li> 1 PSU </li>
 											</ul>
 										</div>
 									</div>
@@ -133,12 +144,11 @@
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Step 4: Upload the firmware</h3>
+												<h3>Step 4: Configure and upload the firmware</h3>
 											</header>
 											<p>Description for feature 4</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+
+
 										</div>
 									</div>
 								</section>
@@ -150,7 +160,7 @@
 									<header class="major">
 										<h2>Conclusion</h2>
 									</header>
-									<p>Nullam et orci eu lorem consequat tincidunt vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus pharetra. Pellentesque condimentum sem. In efficitur ligula tate urna. Maecenas laoreet massa vel lacinia pellentesque lorem ipsum dolor. Nullam et orci eu lorem consequat tincidunt. Vivamus et sagittis libero. Mauris aliquet magna magna sed nunc rhoncus amet pharetra et feugiat tempus.</p>
+									<p> </p>
 									<ul class="actions">
 										<li><a href="generic.html" class="button next">Get Started</a></li>
 									</ul>
@@ -184,6 +194,7 @@
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			<script src="//scripts.sirv.com/sirvjs/v3/sirv.js"></script>
 
 	</body>
 </html>
