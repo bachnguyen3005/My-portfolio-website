@@ -3507,14 +3507,14 @@ input, select, textarea {
 
 
 		#banner:after {
-			-moz-transition: opacity 1.5s ease;
-			-webkit-transition: opacity 1.5s ease;
-			-ms-transition: opacity 1.5s ease;
-			transition: opacity 1.5s ease;
-			-moz-transition-delay: 0.35s;
-			-webkit-transition-delay: 0.35s;
-			-ms-transition-delay: 0.35s;
-			transition-delay: 0.35s;
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
+			-moz-transition-delay: 0.15s;
+			-webkit-transition-delay: 0.15s;
+			-ms-transition-delay: 0.15s;
+			transition-delay: 0.15s;
 			pointer-events: none;
 			background-color: #1e2237;
 			content: '';
@@ -3554,10 +3554,10 @@ input, select, textarea {
 
 
 		#banner:after {
-			-moz-transition: opacity 1.5s ease;
-			-webkit-transition: opacity 1.5s ease;
-			-ms-transition: opacity 1.5s ease;
-			transition: opacity 1.5s ease;
+			-moz-transition: opacity 0.5s ease;
+			-webkit-transition: opacity 0.5s ease;
+			-ms-transition: opacity 0.5s ease;
+			transition: opacity 0.5s ease;
 			-moz-transition-delay: 0.35s;
 			-webkit-transition-delay: 0.35s;
 			-ms-transition-delay: 0.35s;
