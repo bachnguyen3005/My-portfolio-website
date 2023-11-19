@@ -2924,7 +2924,7 @@ input, select, textarea {
 
 			.tiles article:nth-child(6n - 4):before {
 				background-color: #5a7ee1;
-				/* background-image: url("../../images/SolidWorksModelProject1-removebg-preview.png");
+				background-image: url("../../images/Warman3.jpg");
 				-webkit-filter: blur(0.1em);
 				filter: blur(0.1em);
 				background-size: 100%;
@@ -2932,7 +2932,7 @@ input, select, textarea {
 				width: 100%;
 				background-position: center;
 				-webkit-transition: .3s ease-in-out;
-				transition: .3s ease-in-out; */
+				transition: .3s ease-in-out;
 
 			}
 
