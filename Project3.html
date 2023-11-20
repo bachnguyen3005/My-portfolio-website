@@ -106,38 +106,36 @@
 
 								<section>
 									<a href="Project1.html" class="image">
-										<img src="images/FrameBuilding.jpg" alt="" data-position="top center" />
+										<img src="images/ProjectileMotion.png" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Step 2: Start building the frame</h3>
+												<h3>Motion of the shuttlecock</h3>
 											</header>
-											<li>The 2020 and 2040 aluminum profile extrusion are used to make the frame</li>
-											<li>Metric hex bolts are used with fastened with tap holes inside the aluminum extrusion.</li>
-											<li>I used the torpedo level to make sure all of gantries are parallel and perpendicular together.</li>
+											<li>The motion of the shuttlecock can be simplified into 1 scenario, for example, there is a high-speed camera that can detect the velocity and the angle of the shuttlecock
+												, and I assume that the user can input these values, the initial velocity and the angle. </li>
+											<li>The projectile motion formula is applied to create 3 matrices of x, y and z coordinates. The size of one of them is 100x1</li>
+											<li>As I assumed there are no air friction or wind, the x coordinate of it will be the same which is 0, at the middle of the court.</li>
 										</div>
 									</div>
 								</section>
 
 								<section>
 									<a href="Project1.html" class="image">
-										<img src="images/Wiring.jpg" alt="" data-position="25% 25%" />
+										<img src="images/HittingPoint.png" alt="" data-position="25% 25%" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Step 3: Wiring</h3>
+												<h3>Where should it hit?</h3>
 											</header>
-											<h4> In this step, I need to wire these components: </h4>
+											<!-- <h4> In this step, I need to wire these components: </h4> -->
 											<ul>
-											<li> 1 stepper motor for X gantry</li>
-											<li> 1 stepper motor for Y gantry </li>
-											<li> 2 stepper motor for Z axis </li>
-											<li> 1 thermomistor, 1 heater, 1 layer fan, 1 heatsink fan </li>
-											<li> 3 mechanical endstops </li>
-											<li> 1 LCD screen </li>
-											<li> 1 PSU </li>
+											<li> Firstly, I find the position of the endeffector by taking the forward kinematic with the function fkine()</li>
+											<li> Then, I create a zeros matrix of 100x1 for storing the distance.</li>
+											<li> I take the distance in the Y direction of the endeffector to each point on the trajectory of the shuttlecock that I have already predicted before.</li>
+											<li> Then I find the mininum this distance of it and which point will give the least distance.</li>
 											</ul>
 										</div>
 									</div>
