@@ -52,8 +52,8 @@
 								<h1>WARMAN ROBOT COMPETITION 2023</h1>
 							</header>
 							<div class="content">
-								<p>Description <br />
-								description</p>
+								<p>Design a robot working autonomously delivering the payloads to the respective silos <br />
+								</p>
 							</div>
 						</div>
 					</section>
@@ -65,9 +65,15 @@
 							<section id="one">
 								<div class="inner">
 									<header class="major">
-										<h2>Title 1</h2>
+										<h2>Objectives</h2>
 									</header>
-									<p>Description</p>
+									<p>The Warman Competition 2023 is part of the subject that I take in the Spring semester 2023 call 41059- Mechanical Fundamental Design Studio.
+									The main objectives for this project are as follows:</p>
+									<li> Design a system working autonomously to deliver 3 squash balls to the oxidiser silo, and 3 tennis balls to the fuel silo.</li>
+									<li> The system should start and finish in the Setup/Start Zone. </li>
+									<li> The system must finish the task in 120 sec.</li>
+									<li> The system must weight less than 6kg. </li>
+									<li> The system dimension must less than 400 cubic milimeters.</li>
 								</div>
 							</section>
 
@@ -75,39 +81,61 @@
 							<section id="two" class="spotlights">
 								<section>
 									<a href="generic.html" class="image">
-										<img src="images/pic08.jpg" alt="" data-position="center center" />
+										<img src="images/WarmanMap.png" alt="" data-position="center center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Title 2</h3>
+												<h3>Solution proposal</h3>
 											</header>
-											<p>Decsription</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+										<li>My group has 5 members, each member is responsible for a separate component, this is how we decide to design our system: </li>
+										<li>1. A chassis made with 25x25 aluminum tube with 4 mechanum wheels. (Acknowledge to Carlos Pham) </li>
+										<li>2. A scoop made with 3mm Plywood and drived by a gearbox. (I am responsible for this component, this will be discussed in the next section) </li>
+										<li>3. A lift system made with the drawer slide drived by a pulley system. (Acknowledge to William Coxon)  </li>
+										<li>4. A storage with a door to release control by a SG90S servo and 4-bar linkage mechanism (Acknowledge to Sean Kim) </li>
+										<li>5. An extending arm made of drawer slide integrated wth the lift system. (Acknowledge to Jarred Deluca)  </li>
+									</p>
+
 										</div>
 									</div>
 								</section>
 								<section>
 									<a href="generic.html" class="image">
-										<img src="images/pic09.jpg" alt="" data-position="top center" />
+										<img src="images/GearboxThumbail.png" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Rhoncus magna</h3>
+												<h3>Gearbox</h3>
 											</header>
-											<p>Description</p>
-											<ul class="actions">
-												<li><a href="generic.html" class="button">Learn more</a></li>
-											</ul>
+											<p>Why a gearbox... We target to the make the robot with lowest budget and the most weight efficient for the component. 
+												There are many ways to generatet the rotational movement for the scoop such as servo or stepper motor or a dc motor.
+												However, a servo that can generate a sufficient torque with 350mm lever arm is so expensive for our budget, that is also
+												the reason for rejecting using the stepper motor and the gear dc motor.  
+											</p>
+											<p> In order to design this gearbox, I applied the following knowledge: 
+												<li> AGMA Method (American Gear manufacturers Association) to calculate the module and the face width by verifying the 
+													teeth pressure with the load handled.
+
+												</li>
+												<li> Gear ratio calculation.</li>
+												<li> Deflection in shaft calculation and visualize with bending moment to select the profile for the shaft.</li>
+												<li> Torsion on shaft calculation with PLA material.</li>
+												<li> Analyzing the load capacity to select the suitable bearing.</li>
+
+											</p>
 										</div>
 									</div>
 								</section>
 								<section>
-									<a href="generic.html" class="image">
-										<img src="images/pic10.jpg" alt="" data-position="25% 25%" />
+									<a href="https://youtube.com/shorts/8Uk_f6kI5BY?feature=share" class="image">
+										<!-- <img src="images/pic10.jpg" alt="" data-position="25% 25%" /> -->
+										<iframe width="576" height="515" src="https://youtube.com/embed/8Uk_f6kI5BY?autoplay=1&mute=1" 
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture;
+										web-share">
+										</iframe>
 									</a>
 									<div class="content">
 										<div class="inner">
@@ -149,9 +177,9 @@
 								<li><a href="Project1.html" class="page">1</a></li>
 								<li><a href="Project2.html" class="page active">2</a></li>
 								<!-- <li><span>&hellip;</span></li> -->
-								<li><a href="#" class="page">3</a></li>
-								<li><a href="#" class="page">4</a></li>
-								<li><a href="#" class="page">5</a></li>
+								<li><a href="Project3.html" class="page">3</a></li>
+								<li><a href="Project4.html" class="page">4</a></li>
+								<li><a href="Project5.html" class="page">5</a></li>
 								<li><a href="#" class="button small">Next</a></li>
 							</ul>
 							<!-- <ul class="icons">
