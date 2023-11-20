@@ -2938,7 +2938,7 @@ input, select, textarea {
 
 			.tiles article:nth-child(6n - 3):before {
 				background-color: #ec8d81;
-				background-image: url("../../images/Thumbnail3Pre.png");
+				background-image: url("../../images/Thumbnail3darker.png");
 				-webkit-filter: blur(0.1em);
 				filter: blur(0.1em);
 				background-size: 100%;
