@@ -2911,20 +2911,20 @@ input, select, textarea {
 				/* background-color: rgba(191, 63, 63, 0.663) */
 				/* background: #242943; */
 				background-color: #242943;
-				/* background-image: url("../../images/SolidWorksModelProject1-removebg-preview.png"); */
-				/* -webkit-filter: blur(0.1em); */
-				/* filter: blur(8px); 
+				background-image: url("../../images/3Dthumbnailnew.png");
+				 -webkit-filter: blur(0.1em);
+				 filter: blur(8px); 
 				background-size: 100%;
 				height: 100%;
 				width: 100%;
 				background-position: center;
 				-webkit-transition: .5s ease-in-out;
-				transition: .5s ease-in-out;				 */
+				transition: .5s ease-in-out;				 
 			}
 
 			.tiles article:nth-child(6n - 4):before {
 				background-color: #5a7ee1;
-				/* background-image: url("../../images/Warman3.jpg");
+				background-image: url("../../images/Warman3.jpg");
 				-webkit-filter: blur(0.1em);
 				filter: blur(0.1em);
 				background-size: 100%;
@@ -2932,7 +2932,7 @@ input, select, textarea {
 				width: 100%;
 				background-position: center;
 				-webkit-transition: .3s ease-in-out;
-				transition: .3s ease-in-out; */
+				transition: .3s ease-in-out;
 
 			}
 
