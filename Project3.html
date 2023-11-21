@@ -156,15 +156,12 @@
 											<header class="major">
 												<h3>Image Based Visual Seroving</h3>
 											</header>
-											<p> I used the Marlin firmware 1.1.9 which is the opernsource firmware for 3D printer. Although the firmware is already had, I still need to adjust some configuration
-												to fit with my own hardware on my 3D printer such as:
-											</p>
-											<li> </li>
-											<li> </li>
-											<li> </li>
-											<li> </li>
-											<li> </li>
-											<li> </li>
+											<p> I also integrate the visual servoing for the robot, this method call image based visual servoing, this means the 
+											camera mounted on the endeffector and we can map the velocity of the image pixel to the velocity of the endeffector by 
+											multiply the image Jacobian matrix to the velocity of the endeffector. The video on the right demonstrates how the 
+											image based visual seroving work, I mount a camera on the endeffector but I make it invisible, the desired frame is that 
+											camera will be at the center of the opponent racket at 500x500px.  </p>
+
 											<!-- <ul class="actions">
 												<li><a href="https://github.com/bachnguyen3005/Bed-slinger-s--firmware" class="button next"> Source code</a></li>
 											</ul> -->
@@ -173,25 +170,29 @@
 								</section>
 
 								<section>
-									<a href="https://marlinfw.org/" class="image">
-										<!-- <iframe width="420" height="315"
-											src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-										</iframe>	 -->
-										<img src="images/FinalResult1.JPG" alt="" data-position="center center"  />
+									<a href="https://www.youtube.com/watch?v=HPzpnC6jP1c" class="image">
+										<iframe width="576" height="515" src="https://www.youtube.com/embed/HPzpnC6jP1c?autoplay=1&mute=1" 
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture;
+										web-share">
+										</iframe>
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Final result</h3>
+												<h3>Final video demonstration</h3>
 											</header>
-											<li> The printer worked reliably around 8 hours a day for more than six months. After six months, I need to replace the nozzle and the layer fan for it as most of the time I print PLA so the fan need to be always turn on so it usually make some weird noise when it work in a long time.</li>
-											<li> Normal printing speed: 45mm/s and 1000mm/s^2 acceleration.</li>
-											<li> The bed adhesion is very good with the 60 degree on the heated bed.</li>
-											<li> The precision of the print is about +-0.1mm.</li>
-											<li> The stepper was not missed step while working.</li>
-											
+											<p> This is the final video demonstration for the system, it can demonstrate better how I apply the RMRC and path planning between poses.
+												The method that I used to detect the collision is ellipsoid check, it means creating an ellipsoid around the links of the 
+												robot and check the distance between the points and the radius of the ellipsoid to see if it lie on the surface or inside or outside the surface.
+												RMRC is integrated in generating the hitting trajectory of the shuttlecock, after finding the hitting point, racket will move backward a bit 
+												just like when we swing the racket to have more inertia, and then it will move in a straight line with RMRC to move to the hitting point.
+												All the poses are generated with inverse kinematic to find the joint states for the robot. All the code 
+												can be found on my GitHub.
+											</p>
 											<ul class="actions">
-												<li><a href="https://youtube.com/shorts/laq48rgFMio?feature=share" class="button next"> Testing video</a></li>
+												<li><a href="https://youtube.com/shorts/laq48rgFMio?feature=share" class="button next">Source code</a></li>
 											</ul>
 										</div>
 									</div>
