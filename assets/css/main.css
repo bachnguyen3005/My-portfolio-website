@@ -2964,6 +2964,15 @@ input, select, textarea {
 
 			.tiles article:nth-child(6n - 1):before {
 				background-color: #8ea9e8;
+				background-image: url("../../images/vzbotthumbnailred.png");
+				-webkit-filter: blur(0.1em);
+				filter: blur(0.1em);
+				background-size: 100%;
+				height: 100%;
+				width: 100%;
+				background-position: center;
+				-webkit-transition: .3s ease-in-out;
+				transition: .3s ease-in-out;
 			}
 
 			.tiles article:nth-child(6n):before {
