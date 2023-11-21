@@ -48,7 +48,7 @@
 							</span>
 							
 							<header class="major">
-								<h1>Project 4</h1>
+								<h1>Brick assembly task with UR3 simulated in MATLAB </h1>
 							</header>
 							<div class="content">
 								<p> </p>
@@ -67,153 +67,119 @@
 										<h2>Objectives</h2>
 									</header>
 									<p> 
-									<li> </li>
-									</p>
+									<li> UR3 model must be mounted on the linear rail </li>
+									<li> Model and simulate the gripper</li>
+									<li> Simualte the environment and safety features </li>
+									<li> Display and log transforms and process status during task completion </li>
+									<li> Calculate and plot workspace radius & volume </li>
+								</p>
 								</div>
 							</section>
 
 						<!-- Body section -->
 							<section id="two" class="spotlights">
 								<section>
-									<a href="" class="image">
+									<a href="https://www.youtube.com/watch?v=oFAy1v9rBuE" class="image">
 										<img src="images/CustomUR3Gripper.png" alt="" data-position="center center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Step 1: SolidWorks modeling</h3>
+												<h3>Linear UR3 with custom gripper model</h3>
 												</header>
-												<li>In this stage, I have applied reverse engineering to take the dimension of 
-												my current 3D printer which was Ender 3 V2. 
-												I have adjusted the dimension to fit with the size of the heated bed that I bought on Aliexpress. 
-												I also add two support beams at the back of to make the 2 Z axis beams  more rigid.
-												The cover box for the electronics and the power supply are also mounted outside for easier to maintain (Design for manintainance).
+												<li>
+													The linear rail act like a prismatic link for the UR3, I need to adjust the DH parameters a bit to fit with the linear rail.
+													 
+												</li>
+												<li> The gripper contains 2 fingers, each finger act like a 2D plannar robot with 2 joints.
 												</li>
 										</div>
 									</div>
 								</section>
 
 								<section>
-									<a href="Project1.html" class="image">
-										<img src="images/FrameBuilding.jpg" alt="" data-position="top center" />
+									<a href="https://www.youtube.com/watch?v=oFAy1v9rBuE" class="image">
+										<img src="images/VolumeCalculation.png" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Step 2: Start building the frame</h3>
+												<h3>Working volume calculation</h3>
 											</header>
-											<li>The 2020 and 2040 aluminum profile extrusion are used to make the frame</li>
-											<li>Metric hex bolts are used with fastened with tap holes inside the aluminum extrusion.</li>
-											<li>I used the torpedo level to make sure all of gantries are parallel and perpendicular together.</li>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<a href="Project1.html" class="image">
-										<img src="images/Wiring.jpg" alt="" data-position="25% 25%" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Step 3: Wiring</h3>
-											</header>
-											<h4> In this step, I need to wire these components: </h4>
-											<ul>
-											<li> 1 stepper motor for X gantry</li>
-											<li> 1 stepper motor for Y gantry </li>
-											<li> 2 stepper motor for Z axis </li>
-											<li> 1 thermomistor, 1 heater, 1 layer fan, 1 heatsink fan </li>
-											<li> 3 mechanical endstops </li>
-											<li> 1 LCD screen </li>
-											<li> 1 PSU </li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-
-								<section>
-									<a href="https://marlinfw.org/" class="image">
-										<!-- <iframe width="420" height="315"
-											src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-										</iframe>	 -->
-										<img src="images/Marlin.png" alt="" data-position="top center" />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Step 4: Configure and upload the firmware</h3>
-											</header>
-											<p> I used the Marlin firmware 1.1.9 which is the opernsource firmware for 3D printer. Although the firmware is already had, I still need to adjust some configuration
-												to fit with my own hardware on my 3D printer such as:
-											</p>
-											<li> The type of driver for the stepper motor: A4988. </li>
-											<li> The microstep for the drivers.</li>
-											<li> The logical state for mechanical endstops.</li>
-											<li> The number step per milimeter for the stepper.</li>
-											<li> The type of the LCD screen that we used.</li>
-											<li> The maximum acceleration and jerk for the motor.</li>
-											<ul class="actions">
-												<li><a href="https://github.com/bachnguyen3005/Bed-slinger-s--firmware" class="button next"> Source code</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-								<section>
-									<a href="https://marlinfw.org/" class="image">
-										<!-- <iframe width="420" height="315"
-											src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-										</iframe>	 -->
-										<img src="images/FinalResult1.JPG" alt="" data-position="center center"  />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Final result</h3>
-											</header>
-											<li> The printer worked reliably around 8 hours a day for more than six months. After six months, I need to replace the nozzle and the layer fan for it as most of the time I print PLA so the fan need to be always turn on so it usually make some weird noise when it work in a long time.</li>
-											<li> Normal printing speed: 45mm/s and 1000mm/s^2 acceleration.</li>
-											<li> The bed adhesion is very good with the 60 degree on the heated bed.</li>
-											<li> The precision of the print is about +-0.1mm.</li>
-											<li> The stepper was not missed step while working.</li>
-											
-											<ul class="actions">
-												<li><a href="https://youtube.com/shorts/laq48rgFMio?feature=share" class="button next"> Testing video</a></li>
-											</ul>
-										</div>
-									</div>
-								</section>
-
-
-								<section>
-									<a href="" class="image">
-										<!-- <iframe width="420" height="315"
-											src="https://www.youtube.com/embed/tgbNymZ7vqY?autoplay=1&mute=1">
-										</iframe>	 -->
-										<img src="images/Testing.png" alt="" data-position="center center"  />
-									</a>
-									<div class="content">
-										<div class="inner">
-											<header class="major">
-												<h3>Test print images</h3>
-											</header>
-											<li> Most of the prints show that the quality was very smooth, due to the fact that the Z axis were rigid and straight (no wobble) all the time
-												so the consistency between each layer can be maintained very well.
+											<li> The red pointcloud are generated by iterate each link of the UR3 from the start to the qlim with the proper steps.
+												The working volume of the UR3 on the linear rail is estimated by assuming it an ellipsoid and I used the formula for the volume
+												of the ellipsoid to calculate it. 
+											<li> Visualizing the working volume in a pointcloud helps me to identify where should I place the fence to protect it from the other people.
 											</li>
-											<li> I tested it to print at 50mm/s with Black PLA filament at 200 degree for the nozzle and 60 degree for the bed.</li>
-											<li> The bed adhesion is very good with the 60 degree on the heated bed.</li>
-											<li> The precision of the print is about +-0.1mm.</li>
-											<li> The stepper was not missed step while working.</li>
-											
-											<ul class="actions">
-												<li><a href="https://youtube.com/shorts/laq48rgFMio?feature=share" class="button next"> Testing video</a></li>
-											</ul>
+
 										</div>
 									</div>
 								</section>
 
+								<section>
+									<a href="https://www.youtube.com/watch?v=oFAy1v9rBuE" class="image">
+										<iframe width="576" height="515" src="https://www.youtube.com/embed/oFAy1v9rBuE?autoplay=1&mute=1" 
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture;
+										web-share">
+										</iframe>
+
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Simulation video</h3>
+											</header>
+											<p> You can click to the video to go to youtube, it would be easier to see it more clearly.</p>
+										</div>
+									</div>
+								</section>
+
+
+								<section>
+									<a href="https://www.youtube.com/watch?v=HDZIrKFuw_Y" class="image">
+										<iframe width="576" height="515" src="https://www.youtube.com/embed/HDZIrKFuw_Y?autoplay=1&mute=1" 
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture;
+										web-share">
+										</iframe>
+										
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Pick and place task simulation on the real UR3</h3>
+											</header>
+											<p> 
+												It was not very fancy :) as I need to send separate rossubcriber command to maintain the safety for the robot.
+												However, I did learn how the ROS work in MATLAB and later I can apply it into many other robots in the mechantronics lab.
+											</p>
+
+										</div>
+									</div>
+
+								</section>
+							</section>
+															
+							<section id="three">
+								<div class="inner">
+									<header class="major">
+										<h2>Conclusion</h2>
+									</header>
+									<p>After this project, I have acquired many invaluable knowledge and skill: </p>
+									<li> 1. Inverse kinematic with jont guess and foward kinematic and foward kinematic.
+										Trajectory generation with trapezodial velocity profile.
+
+									</li>
+									<li> 2. Functions and classes in MATLAB
+									</li>
+									<li> 3. Documenting the safety and risk assessment before working with the real robot.
+
+									</li>
+
+								</div>
 							</section>
 
 
