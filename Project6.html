@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Project 4</title>
+		<title>A Self-balancing Bot</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
@@ -30,8 +30,8 @@
 							<li><a href="Project2.html">WARMAN ROBOT</a></li>
 							<li><a href="Project3.html">BADMINTON BOT 2000</a></li>
 							<li><a href="Project4.html">ASSEMBLY TASK WITH UR3</a></li>
-							<li><a href="Project5.html">PROJECT 5</a></li>
-							<li><a href="Project1.html">PROJECT 6</a></li>
+							<li><a href="Project5.html">VzBot 235 Printer</a></li>
+							<li><a href="Project6.html">Self-balancing robot</a></li>
 
 						</ul>
 						<ul class="actions stacked">
@@ -45,14 +45,14 @@
 					<section id="banner" class="style2">
 						<div class="inner">
 							<span class="image">
-								<img src="images/CustomUR3Gripper.png" alt="" />
+								<img src="images/ThumbnailProject1.jpg" alt="" />
 							</span>
 							
 							<header class="major">
-								<h1>Brick assembly task with UR3 simulated in MATLAB </h1>
+								<h1>A Self-balancing Bot</h1>
 							</header>
 							<div class="content">
-								<p> </p>
+								<p>  </p>
 								</p>
 							</div>
 						</div>
@@ -67,126 +67,127 @@
 									<header class="major">
 										<h2>Objectives</h2>
 									</header>
-									<p> 
-									<li> UR3 model must be mounted on the linear rail </li>
-									<li> Model and simulate the gripper</li>
-									<li> Simualte the environment and safety features </li>
-									<li> Display and log transforms and process status during task completion </li>
-									<li> Calculate and plot workspace radius & volume </li>
-								</p>
+									<p>                                                                                                          
+										The primary objective behind constructing this self-balancing robot 
+										is to gain insight 
+										into the functionality of two-wheeled motorized personal vehicles, such as the 
+										renowned Segway self-balancing vehicle.
+									</p>
+									<p>
+										Additionally, I aim to enhance my programming skills by utilizing Arduino 
+										and C++ language, exclusively without relying on external libraries. 
+										This hands-on experience will provide invaluable learning opportunities as 
+										I delve into coding from the ground up.
+										
+									</p>
+									<p>
+										The control theory that I applied in this project is the PID control, and also the 
+										implementation of Kalman  filters for readin the data from the sensor. 
+										These techniques are leanrt in theory in the course but I want to make it more 
+										practical so I decided to engage it to this project. 
+										
+									</p>
+									<p>
+										The code can be found <a href="https://github.com/bachnguyen3005/My-Self-Balancing-Bot">"HERE"</a>.
+									</p>
 								</div>
 							</section>
 
 						<!-- Body section -->
 							<section id="two" class="spotlights">
 								<section>
-									<a href="https://www.youtube.com/watch?v=oFAy1v9rBuE" class="image">
-										<img src="images/CustomUR3Gripper.png" alt="" data-position="center center" />
+									<a href="" class="image">
+										<img src="images/Render_cut.JPG" alt="" data-position="center center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Linear UR3 with custom gripper model</h3>
+												<h3> Overview</h3>
 												</header>
 												<li>
-													The linear rail act like a prismatic link for the UR3, I need to adjust the DH parameters a bit to fit with the linear rail.
-													 
+													The design consists of a base platform for mounting the L298N motor driver, a platform for 
+													mounting the Arduino Uni R3 and the accelerometer MPU6560 and the highest platform is to mount 
+													a 12V lipo battery.  
 												</li>
-												<li> The gripper contains 2 fingers, each finger act like a 2D plannar robot with 2 joints.
+												<li> This project was conceptualized using SolidWorks, 
+													drawing inspiration from the inverted pendulum 
+													model as a guiding principle.
 												</li>
 										</div>
 									</div>
 								</section>
 
 								<section>
-									<a href="https://www.youtube.com/watch?v=oFAy1v9rBuE" class="image">
-										<img src="images/VolumeCalculation.png" alt="" data-position="top center" />
+									<a href="Project6.html" class="image">
+										<img src="images/Self_balancing_bot.jpg" alt="" data-position="top center" />
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Working volume calculation</h3>
+												<h3>Real model</h3>
 											</header>
-											<li> The red pointcloud are generated by iterate each link of the UR3 from the start to the qlim with the proper steps.
-												The working volume of the UR3 on the linear rail is estimated by assuming it an ellipsoid and I used the formula for the volume
-												of the ellipsoid to calculate it. 
-											<li> Visualizing the working volume in a pointcloud helps me to identify where should I place the fence to protect it from the other people.
+											<li> After priting  out the CAD files in Solidworks, and upload the code for the first test 
+												I relized that the wiring also affect part of the robot so it is not always reliable.
 											</li>
+											<li>
+												Additionally, the PID parameters must be re-tuned for varying surfaces. 
+												For example, when placed on a mat floor or carpet, the robot may 
+												struggle to maintain balance, requiring adjustments to ensure 
+												stability even under these conditions.
 
+											</li>
 										</div>
 									</div>
 								</section>
 
 								<section>
-									<a href="https://www.youtube.com/watch?v=oFAy1v9rBuE" class="image">
-										<iframe width="576" height="515" src="https://www.youtube.com/embed/oFAy1v9rBuE?autoplay=1&mute=1" 
+									<a href="https://youtu.be/42zZkReNyls" class="image">
+										<iframe width="576" height="515" src="https://youtube.com/embed/42zZkReNyls" 
 										frameborder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
 										gyroscope; picture-in-picture;
 										web-share">
 										</iframe>
-
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Simulation video</h3>
+												<h3>Testing video</h3>
 											</header>
-											<p> You can click to the video to go to youtube, it would be easier to see it more clearly.</p>
+											<p>
+												After spending several hours fine-tuning 
+												the PID parameters, 
+												the desired outcome has finally been achieved.
+											</p>
 										</div>
 									</div>
 								</section>
 
 
-								<section>
-									<a href="https://www.youtube.com/watch?v=HDZIrKFuw_Y" class="image">
-										<iframe width="576" height="515" src="https://www.youtube.com/embed/HDZIrKFuw_Y?autoplay=1&mute=1" 
+								<!-- <section>
+									<a href="https://youtu.be/RHGaDyc7YLY" class="image">
+										<iframe width="576" height="515" src="https://youtube.com/embed/RHGaDyc7YLY?autoplay=1&mute=1" 
 										frameborder="0"
 										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
 										gyroscope; picture-in-picture;
 										web-share">
 										</iframe>
-										
 									</a>
 									<div class="content">
 										<div class="inner">
 											<header class="major">
-												<h3>Pick and place task simulation on the real UR3</h3>
+												<h3>Title 4</h3>
 											</header>
 											<p> 
-												It was not very fancy :) as I need to send separate rossubcriber command to maintain the safety for the robot.
-												However, I did learn how the ROS work in MATLAB and later I can apply it into many other robots in the mechantronics lab.
 											</p>
 
 										</div>
 									</div>
-
 								</section>
-							</section>
-															
-							<section id="three">
-								<div class="inner">
-									<header class="major">
-										<h2>Conclusion</h2>
-									</header>
-									<p>After this project, I have acquired many invaluable knowledge and skill: </p>
-									<li> 1. Inverse kinematic with jont guess and foward kinematic and foward kinematic.
-										Trajectory generation with trapezodial velocity profile.
 
-									</li>
-									<li> 2. Functions and classes in MATLAB
-									</li>
-									<li> 3. Documenting the safety and risk assessment before working with the real robot.
+								
 
-									</li>
-									<ul class="actions">
-										<li><a href="https://github.com/bachnguyen3005/Assembly-task-with-UR3" class="button next">Source code</a></li>
-									</ul>
-
-								</div>
-
-							</section>
-
+							</section> -->
 
 
 					</div>
@@ -197,16 +198,16 @@
 						<div class="inner">
 							<h4>Pages</h4>
 							<ul class="pagination">
-								<li><span href= "index.html" class="button small"  >Prev</span></li>
+								<li><span href= "Project5.html" class="button small"  >Prev</span></li>
 								<li><a href="index.html" class="page">0</a></li>
 								<li><a href="Project1.html" class="page ">1</a></li>
 								<li><a href="Project2.html" class="page">2</a></li>
 								<!-- <li><span>&hellip;</span></li> -->
-								<li><a href="Project3.html" class="page ">3</a></li>
-								<li><a href="Project4.html" class="page active">4</a></li>
+								<li><a href="Project3.html" class="page">3</a></li>
+								<li><a href="Project4.html" class="page">4</a></li>
 								<li><a href="Project5.html" class="page">5</a></li>
-								<li><a href="Project6.html" class="page">6</a></li>
-								<li><a href="Project5.html" class="button small">Next</a></li>
+								<li><a href="Project6.html" class="page active">6</a></li>
+								<!-- <li><a href="Project" class="button small">Next</a></li> -->
 							</ul>
 
 							<ul class="copyright">
