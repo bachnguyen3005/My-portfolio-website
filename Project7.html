@@ -73,27 +73,8 @@
 						<h2>Objectives</h2>
 					</header>
 					<p>
-						The objective of this project is to 
-						into the functionality of two-wheeled motorized personal vehicles, such as the
-						renowned Segway self-balancing vehicle.
-					</p>
-					<p>
-						Additionally, I aim to enhance my programming skills by utilizing Arduino
-						and C++ language, exclusively without relying on external libraries.
-						This hands-on experience will provide invaluable learning opportunities as
-						I delve into coding from the ground up.
-
-					</p>
-					<p>
-						The control theory that I applied in this project is the PID control, and also the
-						implementation of Kalman filters for readin the data from the sensor.
-						These techniques are leanrt in theory in the course but I want to make it more
-						practical so I decided to engage it to this project.
-
-					</p>
-					<p>
-						The code can be found <a
-							href="https://github.com/bachnguyen3005/My-Self-Balancing-Bot">"HERE"</a>.
+						The objective of this project is that I want to design the relay board that can be used for IoT purpose.
+						I aim to combine the ESP32 Wroom 32D and 4 relays into a single board as well as the micro USB programmer on board for the ESP32.
 					</p>
 				</div>
 			</section>
@@ -107,42 +88,43 @@
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3> Overview</h3>
+								<h3>Design features</h3>
 							</header>
 							<li>
-								The design consists of a base platform for mounting the L298N motor driver, a platform
-								for
-								mounting the Arduino Uni R3 and the accelerometer MPU6560 and the highest platform is to
-								mount
-								a 12V lipo battery.
+								The board consist of a AC-DC converter module, which take the 220V AC input and convert to 5V for powering the MCU and triggering relays. 
+								The efficiency of the power isn't need to be really high, as we don't need to power any device that require high current. 
+								So we can use the one from High-Link (HLK-2M05), that have the efficiency around 69%.
+								Additionally, there is a 1A fuse for the saftety. 
 							</li>
-							<li> This project was conceptualized using SolidWorks,
-								drawing inspiration from the inverted pendulum
-								model as a guiding principle.
+							<li> 
+								There are 2 groves for I2C and SPI connect to the board. For example, an OLED screen or any sensors.
+							</li>
+							
+							<li>
+								In order to control 4 relays, I used a ULN2803ADWR. The ULN2803ADWR is often needed to control relays with a microcontroller like the ESP32 because it acts as an interface between the low-current, 
+								low-voltage digital output of the ESP32 and the higher-current, higher-voltage requirements of relays.
+								Moreover, the ESP32 might not have enough current to drive the relays, and it could be damaged by back-EMF. 
+								The ULN2803ADWR ensures reliable relay control while protecting the microcontroller and simplifying the circuit
+							</li>
+							<li>
+								There are also high voltage gap for the relays.
+							</li>
+							<li>
+								There are 4 switches used for testing purpose, if the application required any button to trigger or pressing to set up the parameters.
 							</li>
 						</div>
 					</div>
 				</section>
 
 				<section>
-					<a href="Project6.html" class="image">
+					<a href="Project7.html" class="image">
 						<img src="images/2DEsp32IotBoard.svg" alt="" data-position="top center" />
 					</a>
 					<div class="content">
 						<div class="inner">
 							<header class="major">
-								<h3>Real model</h3>
+								<h3>Schematic</h3>
 							</header>
-							<li> After priting out the CAD files in Solidworks, and upload the code for the first test
-								I relized that the wiring also affect part of the robot so it is not always reliable.
-							</li>
-							<li>
-								Additionally, the PID parameters must be re-tuned for varying surfaces.
-								For example, when placed on a mat floor or carpet, the robot may
-								struggle to maintain balance, requiring adjustments to ensure
-								stability even under these conditions.
-
-							</li>
 						</div>
 					</div>
 				</section>
@@ -153,14 +135,6 @@
 					</a>
 					<div class="content">
 						<div class="inner">
-							<header class="major">
-								<h3>Testing video</h3>
-							</header>
-							<p>
-								After spending several hours fine-tuning
-								the PID parameters,
-								the desired outcome has finally been achieved.
-							</p>
 						</div>
 					</div>
 				</section>
@@ -208,7 +182,8 @@
 					<li><a href="Project3.html" class="page">3</a></li>
 					<li><a href="Project4.html" class="page">4</a></li>
 					<li><a href="Project5.html" class="page">5</a></li>
-					<li><a href="Project6.html" class="page active">6</a></li>
+					<li><a href="Project6.html" class="page">6</a></li>
+					<li><a href="Project7.html" class="page active">7</a></li>
 					<!-- <li><a href="Project" class="button small">Next</a></li> -->
 				</ul>
 
