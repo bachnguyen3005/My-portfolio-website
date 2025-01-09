@@ -1,0 +1,238 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Esp32 Iot Board</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<!-- Note: The "styleN" class below should match that of the banner element. -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>Dinh Bach Nguyen</strong> </a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="Project1.html">DIY CARTESIAN 3D PRINTER</a></li>
+				<li><a href="Project2.html">WARMAN ROBOT</a></li>
+				<li><a href="Project3.html">BADMINTON BOT 2000</a></li>
+				<li><a href="Project4.html">ASSEMBLY TASK WITH UR3</a></li>
+				<li><a href="Project5.html">VzBot 235 Printer</a></li>
+				<li><a href="Project6.html">Self-balancing robot</a></li>
+				<li><a href="Project7.html">Esp32 Iot Board</a></li>
+
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="generic.html" class="button primary fit">About me</a></li>
+
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
+		<section id="banner" class="style2">
+			<div class="inner">
+				<span class="image">
+					<img src="images/ThumbnailProject1.jpg" alt="" />
+				</span>
+
+				<header class="major">
+					<h1>ESP32 Iot Board</h1>
+				</header>
+				<div class="content">
+					<p> </p>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction section  -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h2>Objectives</h2>
+					</header>
+					<p>
+						The objective of this project is to 
+						into the functionality of two-wheeled motorized personal vehicles, such as the
+						renowned Segway self-balancing vehicle.
+					</p>
+					<p>
+						Additionally, I aim to enhance my programming skills by utilizing Arduino
+						and C++ language, exclusively without relying on external libraries.
+						This hands-on experience will provide invaluable learning opportunities as
+						I delve into coding from the ground up.
+
+					</p>
+					<p>
+						The control theory that I applied in this project is the PID control, and also the
+						implementation of Kalman filters for readin the data from the sensor.
+						These techniques are leanrt in theory in the course but I want to make it more
+						practical so I decided to engage it to this project.
+
+					</p>
+					<p>
+						The code can be found <a
+							href="https://github.com/bachnguyen3005/My-Self-Balancing-Bot">"HERE"</a>.
+					</p>
+				</div>
+			</section>
+
+			<!-- Body section -->
+			<section id="two" class="spotlights">
+				<section>
+					<a href="" class="image">
+						<img src="images/Esp32IotBoard.png" alt="" data-position="center center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3> Overview</h3>
+							</header>
+							<li>
+								The design consists of a base platform for mounting the L298N motor driver, a platform
+								for
+								mounting the Arduino Uni R3 and the accelerometer MPU6560 and the highest platform is to
+								mount
+								a 12V lipo battery.
+							</li>
+							<li> This project was conceptualized using SolidWorks,
+								drawing inspiration from the inverted pendulum
+								model as a guiding principle.
+							</li>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<a href="Project6.html" class="image">
+						<img src="images/2DEsp32IotBoard.svg" alt="" data-position="top center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Real model</h3>
+							</header>
+							<li> After priting out the CAD files in Solidworks, and upload the code for the first test
+								I relized that the wiring also affect part of the robot so it is not always reliable.
+							</li>
+							<li>
+								Additionally, the PID parameters must be re-tuned for varying surfaces.
+								For example, when placed on a mat floor or carpet, the robot may
+								struggle to maintain balance, requiring adjustments to ensure
+								stability even under these conditions.
+
+							</li>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<a href="https://youtu.be/42zZkReNyls" class="image">
+						<img src="images/SchematicEsp32IotBoard.svg" alt="" data-position="top center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Testing video</h3>
+							</header>
+							<p>
+								After spending several hours fine-tuning
+								the PID parameters,
+								the desired outcome has finally been achieved.
+							</p>
+						</div>
+					</div>
+				</section>
+
+
+				<!-- <section>
+									<a href="https://youtu.be/RHGaDyc7YLY" class="image">
+										<iframe width="576" height="515" src="https://youtube.com/embed/RHGaDyc7YLY?autoplay=1&mute=1" 
+										frameborder="0"
+										allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture;
+										web-share">
+										</iframe>
+									</a>
+									<div class="content">
+										<div class="inner">
+											<header class="major">
+												<h3>Title 4</h3>
+											</header>
+											<p> 
+											</p>
+
+										</div>
+									</div>
+								</section>
+
+								
+
+							</section> -->
+
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<div class="inner">
+				<h4>Pages</h4>
+				<ul class="pagination">
+					<li><span href="Project5.html" class="button small">Prev</span></li>
+					<li><a href="index.html" class="page">0</a></li>
+					<li><a href="Project1.html" class="page ">1</a></li>
+					<li><a href="Project2.html" class="page">2</a></li>
+					<!-- <li><span>&hellip;</span></li> -->
+					<li><a href="Project3.html" class="page">3</a></li>
+					<li><a href="Project4.html" class="page">4</a></li>
+					<li><a href="Project5.html" class="page">5</a></li>
+					<li><a href="Project6.html" class="page active">6</a></li>
+					<!-- <li><a href="Project" class="button small">Next</a></li> -->
+				</ul>
+
+				<ul class="copyright">
+					<li>&copy; Dinh Bach Nguyen</li>
+					<li>Design: <a>Dinh Bach Nguyen</a></li>
+				</ul>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="//scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+
+</body>
+
+</html>
