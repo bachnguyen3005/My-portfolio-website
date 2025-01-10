@@ -2910,7 +2910,7 @@ input, select, textarea {
 			.tiles article:nth-child(6n - 5):before {
 				/* background-color: rgba(191, 63, 63, 0.663) */
 				/* background: #242943; */
-				background-color: #242943;
+				background-color: #1e2237;
 				background-image: url("../../images/Esp32IotBoard.png");
 				 -webkit-filter: blur(0.1em);
 				 filter: blur(8px); 
@@ -2923,7 +2923,7 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 4):before {
-				background-color: #5a7ee1;
+				background-color: #374877;
 				background-image: url("../../images/Warman3.jpg");
 				-webkit-filter: blur(0.2em);
 				filter: blur(0.2em);
@@ -2937,8 +2937,8 @@ input, select, textarea {
 			}
 
 			.tiles article:nth-child(6n - 3):before {
-				background-color: #ec8d81;
-				background-image: url("../../images/Thumbnail3Pre.png");
+				background-color: #1d2532;
+				background-image: url("../../images/Project8 Solidworks model.png");
 				-webkit-filter: blur(0.1em);
 				filter: blur(0.1em);
 				background-size: 100%;
