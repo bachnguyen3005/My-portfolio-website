@@ -1,0 +1,261 @@
+<!DOCTYPE HTML>
+
+<html>
+
+<head>
+	<title>Automatic calibration and testing system for industrial pump controllers</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" />
+	</noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Header -->
+		<!-- Note: The "styleN" class below should match that of the banner element. -->
+		<header id="header" class="alt style2">
+			<a href="index.html" class="logo"><strong>Dinh Bach Nguyen</strong> </a>
+			<nav>
+				<a href="#menu">Menu</a>
+			</nav>
+		</header>
+
+		<!-- Menu -->
+		<nav id="menu">
+			<ul class="links">
+				<li><a href="index.html">HOME</a></li>
+				<li><a href="Project1.html">DIY CARTESIAN 3D PRINTER</a></li>
+				<li><a href="Project2.html">WARMAN ROBOT</a></li>
+				<li><a href="Project3.html">BADMINTON BOT 2000</a></li>
+				<li><a href="Project4.html">ASSEMBLY TASK WITH UR3</a></li>
+				<li><a href="Project5.html">VzBot 235 Printer</a></li>
+				<li><a href="Project6.html">Self-balancing robot</a></li>
+				<li><a href="Project7.html">Esp32 Iot Board</a></li>
+				<li> <a href="Project8.html">Industry Capstone Project</a></li>
+
+			</ul>
+			<ul class="actions stacked">
+				<li><a href="generic.html" class="button primary fit">About me</a></li>
+
+			</ul>
+		</nav>
+
+		<!-- Banner -->
+		<!-- Note: The "styleN" class below should match that of the header element. -->
+		<section id="banner" class="style2">
+			<div class="inner">
+				<span class="image">
+					<img src="images/Project9_rollcage_1.JPG" alt="" />
+				</span>
+
+				<header class="major">
+					<h1>Roll cage design for Baja SAE</h1>
+				</header>
+				<div class="content">
+					<p> </p>
+					</p>
+				</div>
+			</div>
+		</section>
+
+		<!-- Main -->
+		<div id="main">
+
+			<!-- Introduction section  -->
+			<section id="one">
+				<div class="inner">
+					<header class="major">
+						<h2>Objectives</h2>
+					</header>
+					<p>
+						<li>This is my final year capstone project that I did with an industry partner
+							- Kelco - An industrial pump controller manufacturer base in Sydney (Brookvale).
+						</li> 
+						<li>
+							Kelco needs me to create a system that help them automatically calibrate their pressure sensor after the assembly process, 
+							and testing the relays under 220V input. 
+						</li>
+						<li>
+							Before, it require a person to do it because the pressure sensor can be calibrated by pumping a pressure of
+							500kPA and inspect the real value on the LCD screen of the pump controller. After that, he will decide to press 
+							the up or down arrow button to adjust the inspected value to match with the true value. 
+						</li>						
+						<li>
+							Secondly, after being calibrated, it will come to the high-voltage testing to see if the relay work fine with the 220V input voltage.
+							If it work fine, there are a pattern of 3 LEDs blinking on the pump controller. The inspector must inpsect the pattern and give 
+							a decision. 
+						</li>
+						<li>
+							My approach for this problem is using computer vision especially OCR technique (Optical Character Recognition)
+							to read the text on the LCD screen to calibrate the pressure sensor. After that, I will use image processing technique 
+							to record the pattern of LED blinking and compare with the correct pattern. 
+						</li>
+						<li>
+							Overall, my role is a combination of mechanical design for
+							the system, electronics design for the control system, firmware design for the system, software UI design
+							for the HMI interface. 
+						</li>
+					</p>
+				</div>
+			</section>
+
+			<!-- Body section -->
+			<section id="two" class="spotlights">
+				<section>
+					<a href="" class="image">
+						<img src="images/Project9_rollcage_1.JPG" alt="" data-position="center center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Physical system</h3>
+							</header>
+							<li>
+								This system is still in developing stage, so the wiring and electric box are still a bit messy.
+							</li>
+							<li>
+								Overall, the system still can fulfill the requirements where safety is the first priorirty. 
+							</li>
+
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<a href="Project7.html" class="image">
+						<img src="images/Project9_rollcage_2.JPG" alt="" data-position="top center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>3D Model Design</h3>
+							</header>
+							<li>
+								In this design, I have ultilized the DFMA and DFAM to design and manufacture all the parts in this project.
+								I have used 2020 aluminum profile to build the main frame and I have printed most of the other part with PLA 
+								and ABS for the parts that under more stress. 
+								
+							</li>
+							<li>
+								The advantage of this design is that, it is easy to disassemble and assemble again but still keep a good precision. 
+								Most of the bolts are M5 profile, so that it is easier to maintain.
+							</li>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<a href="Project7.html" class="image">
+						<img src="images/Project9_rollcage_3.png" alt="" data-position="top center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Dev GUI Interface</h3>
+							</header>
+							<li>
+								This is the dev version of the GUI used to test the OCR model.
+								I have use Qt Creator and C++ to develop the GUI. 
+								It communicates with the ESP32 via UART.  
+							</li>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<a href="https://youtu.be/_pNHPH5O-hE?si=4kljgffNvQiFLUP5" class="image">
+						<iframe width="576" height="515"
+							src="https://youtube.com/embed/_pNHPH5O-hE?si=4kljgffNvQiFLUP5?autoplay=1&mute=1"
+							frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media;
+										gyroscope; picture-in-picture;
+										web-share">
+						</iframe>
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>Demo video</h3>
+							</header>
+							<p>
+							</p>
+
+						</div>
+					</div>
+				</section>
+				<section>
+					<a href="Project7.html" class="image">
+						<img src="images/Project8 Kelco board.jpeg" alt="" data-position="top center" />
+					</a>
+					<div class="content">
+						<div class="inner">
+							<header class="major">
+								<h3>PCB Design and Firmware Production</h3>
+							</header>
+							<li>
+								I also take responsible for creating the firmware for the pump controller. 
+								In this one, they use the PIC18F67K22 of Microchip. Before, the firmware was made by the 
+								PIC block programming, it consumes a lot of memory which is 80%. When I create the firmware
+								with MPLab IDE in C language, it reduce to 40% of total memory. Overall, re-creating the firmware
+								in a universal language such as C helps to reduce the cost for the MCU, and making the firmware 
+								maintainance and update easier for the future engineer. 
+							</li>
+						</div>
+					</div>
+				</section>
+
+
+			</section>
+
+
+		</div>
+
+		<!-- Footer -->
+		<footer id="footer">
+
+			<div class="inner">
+				<h4>Pages</h4>
+				<ul class="pagination">
+					<li><span href="Project5.html" class="button small">Prev</span></li>
+					<li><a href="index.html" class="page">0</a></li>
+					<li><a href="Project1.html" class="page ">1</a></li>
+					<li><a href="Project2.html" class="page">2</a></li>
+					<!-- <li><span>&hellip;</span></li> -->
+					<li><a href="Project3.html" class="page">3</a></li>
+					<li><a href="Project4.html" class="page">4</a></li>
+					<li><a href="Project5.html" class="page">5</a></li>
+					<li><a href="Project6.html" class="page">6</a></li>
+					<li><a href="Project7.html" class="page">7</a></li>
+					<li><a href="Project8.html" class="page active">8</a></li>
+					<!-- <li><a href="Project" class="button small">Next</a></li> -->
+				</ul>
+
+				<ul class="copyright">
+					<li>&copy; Dinh Bach Nguyen</li>
+					<li>Design: <a>Dinh Bach Nguyen</a></li>
+				</ul>
+
+			</div>
+
+		</footer>
+
+	</div>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+	<script src="//scripts.sirv.com/sirvjs/v3/sirv.js"></script>
+
+</body>
+
+</html>
