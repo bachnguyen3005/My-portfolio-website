@@ -99,17 +99,15 @@
 							</header>
 							<li>
 								I made a research before designing the roll cage, 
-								focusing first on meeting all legal requirements. 
+								focusing on meeting all legal requirements. 
 								This involved investigating material specifications, 
-								size constraints, recommended welding methods, and required contact points. 
+								size constraints, welding methods, and required contact points. 
 								By understanding these parameters early in the process, 
 								I could select appropriate materials that would ensure structural integrity while 
 								complying with competition regulations.
 								
 							</li>
-
 							<li>
-							
 								We selected a rack and pinion steering mechanism for its 
 							 	and responsive feedback. 
 								For suspension, we used a double wishbone configuration at the front to optimize wheel control, 
@@ -131,14 +129,13 @@
 								<h3>Frontal Impact Displacement Simulation</h3>
 							</header>
 							<li>
-								In this design, I have ultilized the DFMA and DFAM to design and manufacture all the parts in this project.
-								I have used 2020 aluminum profile to build the main frame and I have printed most of the other part with PLA 
-								and ABS for the parts that under more stress. 
+								I ran a simulation for frontal impact with a 4600N force applied to the front bracing. 
+								The roll cage's estimated weight is 30kg, with the reaction force calculated assuming 
+								the crash will deform the vehicle by 12.5mm before coming to a complete stop, 
+								providing a safety margin. Using the formula F = mv²/(2d), with a velocity of 60m/s, 
+								the simulation results show a maximum displacement of only 2.42mm, 
+								indicating a safety factor of approximately 6. 
 								
-							</li>
-							<li>
-								The advantage of this design is that, it is easy to disassemble and assemble again but still keep a good precision. 
-								Most of the bolts are M5 profile, so that it is easier to maintain.
 							</li>
 						</div>
 					</div>
@@ -154,9 +151,9 @@
 								<h3>Load Test Displacement Simulation</h3>
 							</header>
 							<li>
-								This is the dev version of the GUI used to test the OCR model.
-								I have use Qt Creator and C++ to develop the GUI. 
-								It communicates with the ESP32 via UART.  
+								In this test, I conducted a load simulation with an 80kg person seated in the middle, 
+								along with a 5kg front load and a 25kg rear load. 
+								The results demonstrated a maximum displacement of approximately 0.8mm, which is negligibly small.  
 							</li>
 						</div>
 					</div>
